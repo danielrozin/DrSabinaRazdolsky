@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import { generateMedicalWebPageSchema } from "@/lib/schema";
@@ -130,7 +131,7 @@ export default function HomePage() {
             </div>
             <div className="lg:col-span-2">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
-                <img
+                <Image
                   src="/images/dr-sabina-razdolsky.jpg"
                   alt="Dr. Sabina Razdolsky, OB/GYN Resident Physician"
                   className="h-full w-full object-cover object-top"

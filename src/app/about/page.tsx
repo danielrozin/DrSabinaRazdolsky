@@ -1,4 +1,5 @@
 import Link from "next/link";
+import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 import LastReviewed from "@/components/LastReviewed";
@@ -51,7 +52,7 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="lg:col-span-1">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl">
-              <img
+              <Image
                 src="/images/dr-sabina-razdolsky.jpg"
                 alt="Dr. Sabina Razdolsky, OB/GYN Resident Physician"
                 className="h-full w-full object-cover object-top"
