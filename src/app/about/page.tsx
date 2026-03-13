@@ -1,7 +1,8 @@
 import Link from "next/link";
-import Image from "next/image";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
+
+const basePath = process.env.NODE_ENV === "production" ? "/DrSabinaRazdolsky" : "";
 import LastReviewed from "@/components/LastReviewed";
 import { generatePersonSchema } from "@/lib/schema";
 
@@ -52,8 +53,8 @@ export default function AboutPage() {
           {/* Photo */}
           <div className="lg:col-span-1">
             <div className="aspect-[3/4] overflow-hidden rounded-2xl">
-              <Image
-                src="/images/dr-sabina-razdolsky.jpg"
+              <img
+                src={`${basePath}/images/dr-sabina-razdolsky.jpg`}
                 alt="Dr. Sabina Razdolsky, OB/GYN Resident Physician"
                 className="h-full w-full object-cover object-top"
                 width={400}
