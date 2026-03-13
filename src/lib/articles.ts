@@ -10,6 +10,17 @@ export interface Article {
   relatedArticles: string[];
 }
 
+export const articleCategories = [
+  "All",
+  "Obstetrics",
+  "Gynecology",
+  "Pregnancy",
+  "Postpartum",
+  "Procedures",
+  "Preconception",
+  "Labor & Delivery",
+] as const;
+
 export const articles: Article[] = [
   {
     slug: "preconception-checkup-guide",
