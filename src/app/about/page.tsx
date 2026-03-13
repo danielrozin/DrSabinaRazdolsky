@@ -48,17 +48,16 @@ export default function AboutPage() {
 
         {/* Header */}
         <div className="mt-6 grid gap-8 lg:grid-cols-3 items-start">
-          {/* Photo placeholder */}
+          {/* Photo */}
           <div className="lg:col-span-1">
-            <div className="aspect-[3/4] rounded-2xl bg-gradient-to-br from-teal-100 to-teal-50 flex items-center justify-center">
-              <div className="text-center p-4">
-                <div className="mx-auto h-16 w-16 rounded-full bg-teal-200/60 flex items-center justify-center">
-                  <svg className="h-8 w-8 text-[#0F766E]" fill="none" viewBox="0 0 24 24" stroke="currentColor" strokeWidth={1.5}>
-                    <path strokeLinecap="round" strokeLinejoin="round" d="M15.75 6a3.75 3.75 0 11-7.5 0 3.75 3.75 0 017.5 0zM4.501 20.118a7.5 7.5 0 0114.998 0A17.933 17.933 0 0112 21.75c-2.676 0-5.216-.584-7.499-1.632z" />
-                  </svg>
-                </div>
-                <p className="mt-2 text-xs text-teal-700">Professional photo coming soon</p>
-              </div>
+            <div className="aspect-[3/4] overflow-hidden rounded-2xl">
+              <img
+                src="/images/dr-sabina-razdolsky.jpg"
+                alt="Dr. Sabina Razdolsky, OB/GYN Resident Physician"
+                className="h-full w-full object-cover object-top"
+                width={400}
+                height={533}
+              />
             </div>
           </div>
 
