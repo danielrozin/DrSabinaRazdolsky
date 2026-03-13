@@ -74,12 +74,13 @@ export default function HomePage() {
         <div className="mx-auto max-w-6xl px-4 py-16 sm:px-6 sm:py-24 lg:px-8">
           <div className="max-w-3xl">
             <h1 className="text-3xl font-bold tracking-tight sm:text-4xl lg:text-5xl leading-tight">
-              Evidence-Based Women&apos;s Health Education
+              Dr. Sabina Razdolsky
             </h1>
-            <p className="mt-4 text-lg text-teal-100 leading-relaxed sm:text-xl max-w-2xl">
-              Reliable obstetrics and gynecology information, written by a physician
-              and grounded in current medical evidence. No jargon, no sales pitches
-              &mdash; just clear, trustworthy health education.
+            <p className="mt-2 text-lg font-medium text-teal-200 sm:text-xl">
+              Obstetrics &amp; Gynecology
+            </p>
+            <p className="mt-4 text-base text-teal-100 leading-relaxed sm:text-lg max-w-xl">
+              Reliable obstetrics and gynecology information. Clear, trustworthy health education.
             </p>
             <div className="mt-8 flex flex-wrap gap-3">
               <Link
