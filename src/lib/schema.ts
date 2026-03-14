@@ -1,7 +1,7 @@
 import type { Article } from "./articles";
 import type { Publication } from "./publications";
 
-const BASE_URL = "https://drsabinarazdolsky.com";
+const BASE_URL = "https://dr-razdolsky.com";
 
 export function generatePersonSchema() {
   return {

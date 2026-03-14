@@ -2,7 +2,6 @@ import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
-const basePath = process.env.NODE_ENV === "production" ? "/DrSabinaRazdolsky" : "";
 import { generateMedicalWebPageSchema } from "@/lib/schema";
 
 export const metadata = generatePageMetadata(
@@ -133,7 +132,7 @@ export default function HomePage() {
             <div className="lg:col-span-2">
               <div className="aspect-[4/5] overflow-hidden rounded-2xl">
                 <img
-                  src={`${basePath}/images/dr-sabina-razdolsky.jpg`}
+                  src="/images/dr-sabina-razdolsky.jpg"
                   alt="Dr. Sabina Razdolsky, OB/GYN Resident Physician"
                   className="h-full w-full object-cover object-top"
                   width={400}

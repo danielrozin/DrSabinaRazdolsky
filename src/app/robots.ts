@@ -10,6 +10,6 @@ export default function robots(): MetadataRoute.Robots {
         allow: "/",
       },
     ],
-    sitemap: "https://drsabinarazdolsky.com/sitemap.xml",
+    sitemap: "https://dr-razdolsky.com/sitemap.xml",
   };
 }

@@ -1,7 +1,7 @@
 import type { Metadata } from "next";
 
 export const SITE_NAME = "Dr. Sabina Razdolsky | Obstetrics & Gynecology";
-export const BASE_URL = "https://drsabinarazdolsky.com";
+export const BASE_URL = "https://dr-razdolsky.com";
 
 /** @deprecated Use BASE_URL instead */
 export const SITE_URL = BASE_URL;
