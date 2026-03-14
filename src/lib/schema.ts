@@ -11,14 +11,22 @@ export function generatePersonSchema() {
     givenName: "Sabina",
     familyName: "Razdolsky",
     honorificPrefix: "Dr.",
-    jobTitle: "Obstetrician & Gynecologist",
+    honorificSuffix: "M.D.",
+    jobTitle: "OB/GYN Resident Physician",
     description:
       "Dr. Sabina Razdolsky is an OB/GYN physician. She graduated Summa Cum Laude from Semmelweis University in 2022, completed her internship at Ichilov (Tel Aviv Sourasky Medical Center), and is a resident in Obstetrics and Gynecology at Mayanei Hayeshua Medical Center.",
+    image: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/images/dr-sabina-razdolsky.jpg`,
+      caption: "Dr. Sabina Razdolsky, OB/GYN Physician",
+    },
     alumniOf: [
       {
-        "@type": "EducationalOrganization",
+        "@type": "CollegeOrUniversity",
         name: "Semmelweis University",
-        description: "Graduated Summa Cum Laude, 2022",
+        url: "https://semmelweis.hu/english/",
+        description:
+          "One of Europe's oldest and most prestigious medical universities, founded in 1769.",
         address: {
           "@type": "PostalAddress",
           addressLocality: "Budapest",
@@ -26,17 +34,59 @@ export function generatePersonSchema() {
         },
       },
     ],
+    hasCredential: [
+      {
+        "@type": "EducationalOccupationalCredential",
+        credentialCategory: "degree",
+        name: "Doctor of Medicine (M.D.)",
+        description:
+          "Master of Science in Medicine / Doctor of Medicine, Summa Cum Laude",
+        educationalLevel: "EQF Level 7 / HUQF Level 7",
+        recognizedBy: {
+          "@type": "CollegeOrUniversity",
+          name: "Semmelweis University",
+        },
+        dateCreated: "2022-06-25",
+        image: `${BASE_URL}/images/degree-certificate.jpg`,
+      },
+    ],
+    hasOccupation: {
+      "@type": "Occupation",
+      name: "Obstetrician-Gynecologist",
+      occupationalCategory: "29-1218.00",
+      description:
+        "Physicians who specialize in obstetrics and gynecology, providing medical and surgical care to women.",
+      educationRequirements: "Doctor of Medicine (M.D.)",
+      occupationLocation: {
+        "@type": "Country",
+        name: "Israel",
+      },
+    },
     workLocation: [
       {
         "@type": "Hospital",
         name: "Mayanei Hayeshua Medical Center",
-        department: "Obstetrics and Gynecology",
+        department: {
+          "@type": "MedicalClinic",
+          name: "Department of Obstetrics and Gynecology",
+          medicalSpecialty: "Obstetrics and Gynecology",
+        },
+        address: {
+          "@type": "PostalAddress",
+          addressCountry: "Israel",
+        },
       },
     ],
-    medicalSpecialty: {
-      "@type": "MedicalSpecialty",
-      name: "Obstetrics and Gynecology",
-    },
+    medicalSpecialty: [
+      {
+        "@type": "MedicalSpecialty",
+        name: "Obstetrics",
+      },
+      {
+        "@type": "MedicalSpecialty",
+        name: "Gynecology",
+      },
+    ],
     url: BASE_URL,
     sameAs: [],
     knowsAbout: [
@@ -47,7 +97,45 @@ export function generatePersonSchema() {
       "High-Risk Pregnancy",
       "Women's Health",
       "Evidence-Based Medicine",
+      "Cesarean Section",
+      "Preterm Labor",
+      "Prenatal Screening",
     ],
+    knowsLanguage: ["English", "Hebrew", "Russian"],
+  };
+}
+
+export function generateCredentialSchema() {
+  return {
+    "@context": "https://schema.org",
+    "@type": "EducationalOccupationalCredential",
+    credentialCategory: "degree",
+    name: "Doctor of Medicine (M.D.)",
+    description:
+      "Master of Science in Medicine / Doctor of Medicine degree from Semmelweis University. 12-semester integrated medical program. Graduated Summa Cum Laude.",
+    educationalLevel: "EQF Level 7",
+    competencyRequired:
+      "Completion of six-year integrated master's degree programme in medicine",
+    recognizedBy: {
+      "@type": "CollegeOrUniversity",
+      name: "Semmelweis University",
+      url: "https://semmelweis.hu/english/",
+      foundingDate: "1769",
+      address: {
+        "@type": "PostalAddress",
+        addressLocality: "Budapest",
+        addressCountry: "Hungary",
+      },
+    },
+    dateCreated: "2022-06-25",
+    image: {
+      "@type": "ImageObject",
+      url: `${BASE_URL}/images/degree-certificate.jpg`,
+      caption:
+        "Doctor of Medicine degree certificate, Semmelweis University, awarded to Sabina Razdolsky, Summa Cum Laude, June 25, 2022",
+      width: 800,
+      height: 1100,
+    },
   };
 }
 

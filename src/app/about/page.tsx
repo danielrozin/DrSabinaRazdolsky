@@ -3,7 +3,7 @@ import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
 
 import LastReviewed from "@/components/LastReviewed";
-import { generatePersonSchema } from "@/lib/schema";
+import { generatePersonSchema, generateCredentialSchema } from "@/lib/schema";
 
 export const metadata = generatePageMetadata(
   "About Dr. Sabina Razdolsky",
@@ -34,12 +34,17 @@ const timeline = [
 
 export default function AboutPage() {
   const personSchema = generatePersonSchema();
+  const credentialSchema = generateCredentialSchema();
 
   return (
     <>
       <script
         type="application/ld+json"
         dangerouslySetInnerHTML={{ __html: JSON.stringify(personSchema) }}
+      />
+      <script
+        type="application/ld+json"
+        dangerouslySetInnerHTML={{ __html: JSON.stringify(credentialSchema) }}
       />
 
       <div className="mx-auto max-w-4xl px-4 py-10 sm:px-6 lg:px-8">
@@ -94,6 +99,69 @@ export default function AboutPage() {
             </p>
           </div>
         </div>
+
+        {/* Credentials & Clinical Practice */}
+        <section className="mt-14">
+          <h2 className="text-2xl font-bold text-gray-900">
+            Credentials & Clinical Practice
+          </h2>
+          <p className="mt-3 text-base leading-relaxed text-gray-600">
+            Verified medical degree and hands-on clinical training in obstetrics and gynecology.
+          </p>
+
+          <div className="mt-6 grid gap-6 sm:grid-cols-2 lg:grid-cols-3">
+            {/* Degree Certificate */}
+            <div className="group relative overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+              <div className="aspect-[3/4] overflow-hidden bg-gray-50">
+                <img
+                  src="/images/degree-certificate.jpg"
+                  alt="Doctor of Medicine degree certificate from Semmelweis University, awarded to Sabina Razdolsky, Summa Cum Laude, June 2022"
+                  className="h-full w-full object-contain p-2"
+                  width={400}
+                  height={533}
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-sm font-semibold text-gray-900">Doctor of Medicine</p>
+                <p className="text-xs text-gray-500">Semmelweis University, Budapest &middot; June 2022 &middot; Summa Cum Laude</p>
+              </div>
+            </div>
+
+            {/* Graduation Photo */}
+            <div className="group relative overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+              <div className="aspect-[3/4] overflow-hidden bg-gray-50">
+                <img
+                  src="/images/graduation-diploma.jpg"
+                  alt="Dr. Sabina Razdolsky at graduation ceremony holding her medical diploma from Semmelweis University"
+                  className="h-full w-full object-cover object-top"
+                  width={400}
+                  height={533}
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-sm font-semibold text-gray-900">Graduation Ceremony</p>
+                <p className="text-xs text-gray-500">Semmelweis University commencement, Budapest 2022</p>
+              </div>
+            </div>
+
+            {/* Surgery Photo */}
+            <div className="group relative overflow-hidden rounded-xl border border-gray-100 shadow-sm">
+              <div className="aspect-[3/4] overflow-hidden bg-gray-50">
+                <img
+                  src="/images/surgery.png"
+                  alt="Dr. Sabina Razdolsky performing a surgical procedure in the operating room"
+                  className="h-full w-full object-cover object-center"
+                  width={400}
+                  height={533}
+                />
+              </div>
+              <div className="p-3">
+                <p className="text-sm font-semibold text-gray-900">Clinical Practice</p>
+                <p className="text-xs text-gray-500">Surgical training at Mayanei Hayeshua Medical Center</p>
+              </div>
+            </div>
+          </div>
+        </section>
 
         {/* Education & Training Timeline */}
         <section className="mt-14">
