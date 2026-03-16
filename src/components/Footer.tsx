@@ -19,6 +19,11 @@ const resourceLinks = [
 const policyLinks = [
   { label: "Editorial Policy", href: "/editorial-policy" },
   { label: "Medical Disclaimer", href: "/disclaimer" },
+  { label: "Sitemap", href: "/sitemap-page" },
+];
+
+const externalLinks = [
+  { label: "LLMs.txt", href: "/llms.txt" },
 ];
 
 export default function Footer() {
@@ -93,6 +98,16 @@ export default function Footer() {
                   >
                     {link.label}
                   </Link>
+                </li>
+              ))}
+              {externalLinks.map((link) => (
+                <li key={link.href}>
+                  <a
+                    href={link.href}
+                    className="text-sm text-gray-500 transition-colors hover:text-[#0F766E]"
+                  >
+                    {link.label}
+                  </a>
                 </li>
               ))}
             </ul>

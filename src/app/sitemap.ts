@@ -84,5 +84,11 @@ export default function sitemap(): MetadataRoute.Sitemap {
       changeFrequency: "yearly",
       priority: 0.3,
     },
+    {
+      url: `${BASE_URL}/sitemap-page`,
+      lastModified: new Date("2026-03-16"),
+      changeFrequency: "monthly",
+      priority: 0.3,
+    },
   ];
 }
