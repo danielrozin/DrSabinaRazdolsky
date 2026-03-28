@@ -1,7 +1,8 @@
 import Link from "next/link";
 import { generatePageMetadata } from "@/lib/metadata";
 import Breadcrumbs from "@/components/Breadcrumbs";
-
+import ArticleCard from "@/components/ArticleCard";
+import { articles } from "@/lib/articles";
 import { generateMedicalWebPageSchema } from "@/lib/schema";
 
 export const metadata = generatePageMetadata(
@@ -176,6 +177,71 @@ export default function HomePage() {
                 </span>
               </Link>
             ))}
+          </div>
+        </section>
+
+        {/* Latest Articles */}
+        <section className="py-12 sm:py-16">
+          <div className="flex items-end justify-between mb-8">
+            <div>
+              <h2 className="text-2xl font-bold text-gray-900 sm:text-3xl">
+                Latest Articles
+              </h2>
+              <p className="mt-2 text-base text-gray-500 max-w-2xl">
+                New evidence-based articles on women&apos;s health, reviewed by
+                Dr. Razdolsky.
+              </p>
+            </div>
+            <Link
+              href="/articles"
+              className="hidden sm:inline-flex items-center gap-1 text-sm font-medium text-[#0F766E] hover:text-teal-800 transition-colors whitespace-nowrap"
+            >
+              View all articles
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
+          </div>
+
+          <div className="grid gap-5 sm:grid-cols-2 lg:grid-cols-3">
+            {articles
+              .filter((a) => a.sections && a.sections.length > 0)
+              .slice(0, 6)
+              .map((article) => (
+                <ArticleCard key={article.slug} article={article} />
+              ))}
+          </div>
+
+          <div className="mt-6 text-center sm:hidden">
+            <Link
+              href="/articles"
+              className="inline-flex items-center gap-1 text-sm font-medium text-[#0F766E] hover:text-teal-800 transition-colors"
+            >
+              View all articles
+              <svg
+                className="h-4 w-4"
+                fill="none"
+                viewBox="0 0 24 24"
+                stroke="currentColor"
+                strokeWidth={2}
+              >
+                <path
+                  strokeLinecap="round"
+                  strokeLinejoin="round"
+                  d="M9 5l7 7-7 7"
+                />
+              </svg>
+            </Link>
           </div>
         </section>
 
