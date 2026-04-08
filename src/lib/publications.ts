@@ -11,6 +11,7 @@ export interface Publication {
   plainLanguageSummary: string;
   tags: string[];
   pubmedUrl: string;
+  articleUrl?: string;
   isUpcoming?: boolean;
 }
 
@@ -33,6 +34,7 @@ export const publications: Publication[] = [
       "This study compared how ultrasound performs in diagnosing appendicitis in pregnant vs. non-pregnant women and found that pregnant women are much more likely to undergo unnecessary appendix removal. MRI was 100% accurate when used, suggesting it should play a bigger role in evaluating pregnant patients with suspected appendicitis.",
     tags: ["appendicitis", "pregnancy", "ultrasound", "MRI", "diagnostic imaging"],
     pubmedUrl: "",
+    articleUrl: "https://www.sciencedirect.com/science/article/abs/pii/S0301211526001739",
   },
   {
     title:
