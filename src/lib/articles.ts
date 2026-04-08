@@ -1078,4 +1078,96 @@ export const articles: Article[] = [
       },
     ],
   },
+  {
+    slug: "appendicitis-during-pregnancy",
+    title: "Appendicitis During Pregnancy: Diagnosis, Risks, and the Role of Imaging",
+    metaDescription:
+      "Appendicitis during pregnancy can be difficult to diagnose. Learn about symptoms, how ultrasound and MRI compare, surgical risks, and what new research reveals about negative appendectomy rates.",
+    excerpt:
+      "Appendicitis is the most common non-obstetric surgical emergency in pregnancy, but diagnosis is challenging. New research shows ultrasound has significant limitations in pregnant patients and MRI may be the key to reducing unnecessary surgeries.",
+    category: "Obstetrics",
+    tags: ["appendicitis", "pregnancy", "ultrasound", "MRI", "surgery in pregnancy", "diagnostic imaging"],
+    lastReviewed: "2026-04-08",
+    readingTime: 10,
+    relatedArticles: ["trimester-guide", "c-section-recovery", "signs-of-labor"],
+    introduction:
+      "Appendicitis is the most common non-obstetric surgical emergency during pregnancy, occurring in approximately 1 in 500 to 1 in 635 pregnancies. While appendicitis requires prompt treatment to prevent life-threatening complications like perforation and peritonitis, diagnosing it in pregnant patients presents unique challenges. The growing uterus displaces the appendix from its usual location, normal pregnancy symptoms like nausea and abdominal discomfort overlap with appendicitis symptoms, and standard laboratory markers such as white blood cell count are naturally elevated during pregnancy. A recent study published in the European Journal of Obstetrics & Gynecology and Reproductive Biology by Dr. Sabina Razdolsky and colleagues sheds new light on how imaging — particularly ultrasound and MRI — influences surgical decision-making and outcomes in this high-stakes clinical scenario.",
+    keyTakeaways: [
+      "Appendicitis affects approximately 1 in 500 to 1 in 635 pregnancies and requires timely diagnosis to prevent serious complications.",
+      "Pregnant women have a 3.5-fold higher rate of negative (unnecessary) appendectomy compared to non-pregnant women (23.7% vs. 6.6%).",
+      "Ultrasound is the first-line imaging tool but has significant limitations in pregnancy, particularly when findings appear non-suspicious.",
+      "MRI correctly identified all cases of appendicitis in the study, making it a valuable second-line tool when ultrasound is inconclusive.",
+      "Both appendicitis itself and unnecessary surgery carry risks during pregnancy, including preterm delivery.",
+      "A structured diagnostic approach combining clinical assessment, ultrasound, and MRI when needed can reduce unnecessary surgeries and improve outcomes.",
+    ],
+    sections: [
+      {
+        heading: "Why Is Appendicitis Hard to Diagnose in Pregnancy?",
+        content:
+          "Several factors make appendicitis uniquely challenging to identify in pregnant patients. As the uterus grows, the appendix shifts upward and laterally from its standard right lower quadrant position. By the third trimester, appendiceal pain may be felt in the right upper abdomen or even the flank rather than the classic location near the belly button. This anatomical displacement means that the textbook presentation of appendicitis may not apply.\n\nAdditionally, many normal pregnancy symptoms mimic early appendicitis. Nausea, vomiting, mild abdominal discomfort, and a low-grade elevation in white blood cell count are all expected findings during pregnancy. This overlap creates a diagnostic gray zone where clinicians must distinguish between normal pregnancy changes and a true surgical emergency. The stakes are high on both sides: a missed appendicitis can lead to perforation, while an unnecessary surgery exposes both the mother and baby to avoidable risk.",
+      },
+      {
+        heading: "How Common Are Unnecessary Appendectomies in Pregnant Patients?",
+        content:
+          "A major finding from recent research is the striking difference in negative appendectomy rates between pregnant and non-pregnant women. In a retrospective case-control study of 633 patients (211 pregnant and 422 non-pregnant controls) over an 18-year period, pregnant women had a negative appendectomy rate of 23.7 percent compared to just 6.6 percent in non-pregnant controls. This means that nearly one in four pregnant women who underwent appendectomy did not actually have appendicitis.\n\nThis 3.5-fold difference reflects the genuine difficulty of making this diagnosis during pregnancy. Clinicians often face pressure to operate sooner rather than risk a perforation, which can have devastating consequences including sepsis, preterm labor, and pregnancy loss. However, unnecessary surgery carries its own risks, including anesthetic exposure, surgical complications, and an increased rate of preterm delivery. Prior research has shown that negative appendectomies during pregnancy are associated with a higher risk of preterm birth than appendectomies for confirmed appendicitis.",
+      },
+      {
+        heading: "The Role of Ultrasound in Pregnancy-Related Appendicitis",
+        content:
+          "Ultrasound is universally recommended as the first-line imaging modality for suspected appendicitis during pregnancy. It is safe, radiation-free, widely available, and can be performed at the bedside. In non-pregnant patients, ultrasound has reasonable accuracy for diagnosing appendicitis when the appendix is clearly visualized.\n\nHowever, the study findings highlight significant limitations of ultrasound during pregnancy. The enlarged uterus and shifting abdominal anatomy make it more difficult to visualize the appendix. Bowel gas, the patient's body habitus, and the variable position of the appendix further reduce diagnostic accuracy. Most critically, the research showed that when ultrasound findings appeared non-suspicious for appendicitis in pregnant patients, the results were not reliably predictive. A non-suspicious ultrasound did not adequately rule out appendicitis, meaning that clinical decisions based primarily on reassuring ultrasound findings may lead to delayed diagnosis.\n\nThis does not mean ultrasound should be abandoned. It remains an essential first step. But it does mean that a negative or inconclusive ultrasound in a pregnant patient with clinical suspicion for appendicitis should not be considered sufficient to exclude the diagnosis.",
+      },
+      {
+        heading: "MRI as a Game-Changer for Appendicitis in Pregnancy",
+        content:
+          "One of the most compelling findings from recent research is the performance of MRI. In the study, MRI was performed on 12 pregnant patients with suspected appendicitis and correctly identified all confirmed cases. While the sample size is small, this 100 percent accuracy rate is consistent with a growing body of literature supporting MRI as a highly reliable imaging tool for appendicitis in pregnancy.\n\nMRI offers several advantages in this setting. It provides excellent soft tissue contrast without ionizing radiation, making it safe during pregnancy. It is not limited by body habitus, bowel gas, or the displacement of abdominal organs by the uterus. MRI can also identify alternative diagnoses such as ovarian torsion, kidney stones, or other causes of abdominal pain that may mimic appendicitis.\n\nThe main limitations of MRI include availability, cost, and the time required to obtain the study. Not all hospitals have MRI readily accessible around the clock, and there may be delays in obtaining and interpreting the scan. Despite these practical barriers, the evidence suggests that incorporating MRI into the diagnostic algorithm for pregnant patients with suspected appendicitis could significantly reduce negative appendectomy rates and improve overall outcomes.",
+      },
+      {
+        heading: "Symptoms of Appendicitis During Pregnancy: What to Watch For",
+        content:
+          "While the presentation can be atypical, certain signs and symptoms should raise concern for appendicitis during pregnancy. The most common symptom is abdominal pain, which may start around the navel and migrate to the right side. In the second and third trimesters, the pain may be felt higher in the abdomen than expected due to uterine displacement of the appendix.\n\nOther symptoms to watch for include persistent nausea and vomiting (beyond typical morning sickness), loss of appetite, low-grade fever, and tenderness when pressure is applied to the right side of the abdomen. Interestingly, the study found that fever during pregnancy showed an inverse association with confirmed appendicitis, meaning that the presence of fever was more likely to indicate an alternative diagnosis rather than appendicitis itself. This counterintuitive finding underscores why clinical judgment, supported by appropriate imaging, is essential.\n\nIf you are pregnant and experience new or worsening right-sided abdominal pain, especially if accompanied by nausea, vomiting, or fever, contact your OB/GYN or go to the emergency room promptly. Early evaluation is key.",
+      },
+      {
+        heading: "Treatment: Surgery During Pregnancy",
+        content:
+          "When appendicitis is confirmed during pregnancy, surgical removal of the appendix (appendectomy) is the standard treatment. Delaying surgery increases the risk of perforation, which can lead to peritonitis, sepsis, preterm labor, and pregnancy loss. Laparoscopic appendectomy (minimally invasive surgery) is generally preferred when feasible, as it is associated with shorter recovery times and fewer wound complications compared to open surgery.\n\nSurgery during pregnancy is performed with modifications to protect the fetus. Anesthesiologists use pregnancy-safe medications, and fetal heart rate monitoring is typically performed before and after the procedure. The timing of surgery relative to gestational age may influence the surgical approach, with the second trimester generally considered the safest period for non-obstetric surgery.\n\nPost-surgical monitoring focuses on both maternal recovery and signs of preterm labor. Research indicates that appendectomy itself is an independent risk factor for preterm delivery (odds ratio approximately 2.3), making close follow-up essential even after a straightforward procedure.",
+      },
+      {
+        heading: "A Better Diagnostic Approach: Combining Clinical Assessment and Imaging",
+        content:
+          "Based on the latest evidence, a structured stepwise approach to suspected appendicitis in pregnancy is recommended. The first step is a thorough clinical evaluation including history, physical examination, and laboratory tests. When appendicitis is suspected, ultrasound should be the initial imaging study.\n\nIf ultrasound is inconclusive or does not visualize the appendix, and clinical suspicion remains, MRI should be the next step rather than proceeding directly to surgery. This two-step imaging approach can reduce the rate of unnecessary appendectomies by providing a more definitive diagnosis before operative intervention.\n\nThis approach balances the urgency of timely treatment against the harm of unnecessary surgery. While no diagnostic pathway is perfect, incorporating MRI as a standard second-line imaging tool for pregnant patients with suspected appendicitis represents an evidence-based improvement over relying on ultrasound and clinical judgment alone.",
+      },
+    ],
+    faqs: [
+      {
+        question: "Can appendicitis harm my baby?",
+        answer:
+          "Appendicitis itself can pose risks to your pregnancy, particularly if it progresses to perforation and peritonitis. Complications from untreated or perforated appendicitis include preterm labor, preterm delivery, and in rare cases, pregnancy loss. However, when appendicitis is diagnosed and treated promptly, outcomes for both mother and baby are generally good. The key is seeking medical attention quickly if you develop concerning symptoms.",
+      },
+      {
+        question: "Is it safe to have surgery while pregnant?",
+        answer:
+          "Yes. Non-obstetric surgery during pregnancy is performed when medically necessary and is generally safe for both mother and baby. Appendectomy is the most common emergency surgery performed during pregnancy. The surgical team takes specific precautions including pregnancy-safe anesthesia and fetal monitoring. While any surgery carries some risk of preterm labor, the risk of not treating appendicitis is significantly greater than the risk of the surgery itself.",
+      },
+      {
+        question: "Why not just use MRI for everyone with suspected appendicitis?",
+        answer:
+          "While MRI has shown excellent diagnostic accuracy, practical considerations limit its use as a first-line tool. MRI is more expensive, less widely available (especially after hours), and takes longer to perform and interpret than ultrasound. Ultrasound remains an appropriate first step because it is fast, safe, inexpensive, and can confirm appendicitis when the appendix is clearly visualized. MRI is most valuable as a second step when ultrasound is inconclusive and clinical suspicion persists.",
+      },
+      {
+        question: "What is a negative appendectomy?",
+        answer:
+          "A negative appendectomy is a surgical removal of the appendix that reveals a normal, non-inflamed appendix on pathological examination. In other words, the surgery was performed for suspected appendicitis, but the appendix was not actually diseased. While the surgery removes the risk of future appendicitis, it exposes the patient to surgical risks without therapeutic benefit. In pregnant patients, the negative appendectomy rate is approximately 23.7 percent, significantly higher than the 6.6 percent rate in non-pregnant women.",
+      },
+      {
+        question: "Does the trimester of pregnancy affect appendicitis diagnosis or treatment?",
+        answer:
+          "Yes. In the first trimester, the appendix is in its normal position and symptoms may be more typical. As pregnancy progresses into the second and third trimesters, the growing uterus displaces the appendix upward and laterally, making the pain location less predictable. The second trimester is generally considered the safest window for non-obstetric surgery. In the third trimester, surgery is more complex due to the size of the uterus, and there is a higher risk of preterm labor following surgery.",
+      },
+      {
+        question: "Should I be worried about radiation from imaging during pregnancy?",
+        answer:
+          "Ultrasound and MRI are both radiation-free and safe during pregnancy. CT scans do use ionizing radiation and are generally avoided during pregnancy unless no alternative is available. This is one of the key reasons MRI is preferred over CT as the second-line imaging study for suspected appendicitis in pregnant patients. If your doctor recommends MRI, there is no radiation risk to you or your baby.",
+      },
+    ],
+  },
 ];

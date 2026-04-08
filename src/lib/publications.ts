@@ -17,6 +17,25 @@ export interface Publication {
 export const publications: Publication[] = [
   {
     title:
+      "The role of ultrasound in decision-making for the management of suspected acute appendicitis during pregnancy",
+    authors:
+      "Sabina Razdolsky, Nadav Michaan, Emmanuel Attali, Michal Canetti, Yariv Yogev, Yoav Baruch",
+    journal:
+      "European Journal of Obstetrics & Gynecology and Reproductive Biology",
+    year: 2026,
+    volume: "322",
+    pages: "115106",
+    doi: "10.1016/j.ejogrb.2026.115106",
+    pmid: "",
+    summary:
+      "Retrospective case-control study of 633 appendectomy patients (211 pregnant, 422 non-pregnant controls) over 2005–2023. Pregnant women had a 3.5-fold higher negative appendectomy rate (23.7% vs 6.6%). Ultrasound showed limited reliability during pregnancy, particularly with non-suspicious findings. MRI, when performed, correctly identified all cases of appendicitis, suggesting it could improve diagnostic accuracy when ultrasound is inconclusive.",
+    plainLanguageSummary:
+      "This study compared how ultrasound performs in diagnosing appendicitis in pregnant vs. non-pregnant women and found that pregnant women are much more likely to undergo unnecessary appendix removal. MRI was 100% accurate when used, suggesting it should play a bigger role in evaluating pregnant patients with suspected appendicitis.",
+    tags: ["appendicitis", "pregnancy", "ultrasound", "MRI", "diagnostic imaging"],
+    pubmedUrl: "",
+  },
+  {
+    title:
       "Preterm labour induction: modalities, implications and outcomes",
     authors:
       "Shanny Kolp-Asis, Roi Yozevitch, Reut Baram, Elad Miron, Limor Vaknin-Geron, Shani Levin, Sabina Razdolsky, Nissim Arbib",
